@@ -1,0 +1,24 @@
+	
+<h2>We played scissors!</h2>
+ 
+<% computer_move = ["rock", "paper", "scissors"].sample %>
+ 
+<h2>They played <%= computer_move %>!</h2>
+ 
+<% if computer_move == "rock"
+      outcome = "lost"
+    elsif computer_move == "paper"
+      outcome = "won"
+    elsif computer_move == "scissors"
+      outcome = "tied"
+    end
+%>
+ 
+<h2>We <%= outcome%>!</h2>
+
+<a href="/rock">Play Rock</a>
+<a href="/paper">Play Paper</a>
+<a href="/scissors">Play Scissors</a>
+
+<a href="/rules">Rules</a>
+<a href="/">Home</a>
